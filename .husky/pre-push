@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+nom run es-lint
+nom run style-lint
+npm test:ci
